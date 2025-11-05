@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #FFFFFF;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+  justify-content: space-between;
+  display: flex;
+  box-shadow: 0 3px 5px #FFFF00;
+}
+nav p {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+nav ul li {
+  padding: 0.5rem 1rem;
+  background-color: #FFFF00;
+  border-radius: 10px;
+  border: 1px solid #000000;
+}
+nav ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */
