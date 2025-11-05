@@ -3,14 +3,17 @@
 //$secondary-color: #FFFF00; // Yellow
 // $background-color: #FFFFFF; // White
 // $text-color: #000000; // Bla
+@use 'dashboard' as *;
 @use 'variables' as *;
+
 body {
     font-family: Arial, sans-serif;
-    background-color: $background-color; 
-    color: $text-color; 
+    background-color: $background-color;
+    color: $text-color;
     margin: 0;
     padding: 0;
 }
+
 nav {
     background-color: $black-bg;
     color: rgb(255, 255, 255);
@@ -18,29 +21,87 @@ nav {
     justify-content: space-between;
     display: flex;
     box-shadow: 0 3px 5px $secondary-color;
-    p{
+
+    p {
         font-weight: bold;
         font-size: 1.2rem;
+        span{
+            color: $primary-color;
+        }
     }
-    ul{
+
+    ul {
         list-style: none;
         margin: 0;
         padding: 0;
         display: flex;
         gap: 1rem;
+
         li {
             padding: 0.5rem 1rem;
-            background-color: $secondary-color;
-            border-radius: 10px;
-            border: 1px solid #000000; 
-            
+
             a {
-                color: #000000; // white links
+                color: #ffffff; // white links
                 text-decoration: none;
+
                 &:hover {
-                    text-decoration: underline;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+
+                &.btn-login {
+                    font-weight: bold;
+                    background-color: $secondary-color;
+                    color: $black-bg;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 0.5rem 1rem;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: $text-color;
+                        box-shadow: 0 3px 5px $secondary-color;
+                        background-color: white;
+                    }
                 }
             }
         }
+    }
+}
+.header{
+    background-color: $background-color;
+    padding: 2rem;
+    text-align: center;
+
+    h1 {
+        margin: 0;
+        font-size: 8rem;
+        span{
+            color: $primary-color;
+        }
+    }
+    p{
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        color: $text-color;
+    }
+    .header-links{
+        margin-top: 1.5rem;
+
+        a{
+            text-decoration: none;
+            color: $background-color;
+            font-weight: bold;
+            margin: 0 1rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: 10px;
+            background-color: $primary-color;
+
+            &:hover{
+                background-color: darken($primary-color, 10%);
+                box-shadow: 0 3px 5px $primary-color;
+            }
+        }
+        
     }
 }

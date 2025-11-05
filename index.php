@@ -10,16 +10,25 @@
 <body>
     <nav>
         <div>
-            <p>AttendApp</p>
+            <p><span>A</span>ttend<span>A</span>pp</p>
         </div>
         <div>
             <ul>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Register</a></li>
+                <li ><a href="#">Guide</a></li>
+                <li ><a href="#">FAQ</a></li>
+                <li ><a class="btn-login" href="auth/login">Login</a></li>
             </ul>
         </div>
     </nav>
-
+    <div class="header">
+        <h1><span>A</span>ttend<span>A</span>pp</h1>
+        <p>Real-time lecture attendance tracking with dynamic secret codes. Secure,
+             efficient, and cheat-resistant.</p>
+             <div class="header-links">
+                <a href="auth/login">Login</a>
+                <a href="#how-it-works">How It Works</a>
+             </div>
+    </div>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
