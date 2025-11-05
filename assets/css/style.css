@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  justify-content: space-between;
+  display: flex;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+nav ul li {
+  padding: 0.5rem 1rem;
+  border: 1px solid #000000;
+}
+nav ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */

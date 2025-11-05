@@ -1,0 +1,33 @@
+// this is an attendance app style file for a univertisy with colors (red, white ans yellow and black in the badge)
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; // white background
+    color: #000000; // black text
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    justify-content: space-between;
+    display: flex;
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 1rem;
+        li {
+            padding: 0.5rem 1rem;
+            border: 1px solid #000000; // black border
+            a {
+                color: #000000; // white links
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
