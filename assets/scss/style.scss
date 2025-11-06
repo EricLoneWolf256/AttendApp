@@ -5,6 +5,7 @@
 // $text-color: #000000; // Bla
 @use 'dashboard' as *;
 @use 'variables' as *;
+@use 'lecturer' as *;
 
 body {
     font-family: Arial, sans-serif;
